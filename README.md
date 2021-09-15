@@ -1,20 +1,50 @@
-# Project Template
+# PostgreSQL & sqlbench
 
-A brief description of the project.
+Discover and test sqlbench.
 
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)  [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-## Getting started
+![PostgreSQL](./images/postgresql-logo-256.png)
 
-How to start with this project.
+## Getting started with SqlBench
+
+* Clone this project
+* Use docker-compose and the docker-compose.yaml file
+
+```bat
+docker-compose up -d
+```
+
+* Install Go
+* Install Sqlbench with Go
+
+```go
+go get -u github.com/felixge/sqlbench
+```
+
+* Call Sqlbench in CL
+
+```bat
+sqlbench -c postgres://admin:password@localhost:5432/adventureworks?sslmode=disable -n 1000 -o baseline.csv queries/employee.sql
+```
+
+* Use docker-compose to stop properly the project
+
+```bat
+docker-compose down
+```
+
+## Useful links
+
+* [SqlBench](https://github.com/felixge/sqlbench) - Tool to measures and compares the execution time of SQL queries on PG database
 
 ## Build with
 
-List of tools used in this project.
-
-## Useful links or documents
-
-List of links or documents useful for this project
+* [PostgreSQL](https://www.postgresql.org) - Open source object-relational database system
+* [Docker](https://www.docker.com/) - Set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers
+* [Git](https://git-scm.com) - Open source distributed version control system
+* [pgAdmin](https://www.pgadmin.org/) - Open Source administration and development platform for PostgreSQL
+* [Go](https://golang.org/) - Open source programming language 
 
 ## Contributing
 
