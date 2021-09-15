@@ -28,6 +28,11 @@ go get -u github.com/felixge/sqlbench
 sqlbench -c postgres://admin:password@localhost:5432/adventureworks?sslmode=disable -n 1000 -p -v -m client -o baseline.csv scripts/unqualified.sql scripts/qualified.sql scripts/ordered.sql
 ```
 
+The result of this command is :
+
+![sqlbench result](./images/result.png)
+
+
 * Use docker-compose to stop properly the project
 
 ```bat
