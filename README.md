@@ -41,7 +41,7 @@ docker-compose down
 
 ## Useful links
 
-* [SqlBench](https://github.com/felixge/sqlbench) - Tool to measures and compares the execution time of SQL queries on PG database
+* [SqlBench](https://github.com/felixge/sqlbench) - Tool to measures and compares the execution time of SQL queries on PG database made by [Felix Geisendörfer](https://github.com/felixge)
 
 ## Build with
 
