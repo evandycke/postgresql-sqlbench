@@ -25,7 +25,7 @@ go get -u github.com/felixge/sqlbench
 * Call Sqlbench in CL
 
 ```bat
-sqlbench -c postgres://admin:password@localhost:5432/adventureworks?sslmode=disable -n 1000 -o baseline.csv queries/employee.sql
+sqlbench -c postgres://admin:password@localhost:5432/adventureworks?sslmode=disable -n 1000 -p -v -m client -o baseline.csv scripts/unqualified.sql scripts/qualified.sql scripts/ordered.sql
 ```
 
 * Use docker-compose to stop properly the project
