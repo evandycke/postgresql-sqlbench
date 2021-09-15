@@ -32,6 +32,7 @@ The result of this command is :
 
 ![sqlbench result](./images/result.png)
 
+![sqlbench result in live](./images/sqlbench.gif)
 
 * Use docker-compose to stop properly the project
 
