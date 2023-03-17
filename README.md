@@ -1,12 +1,12 @@
-# PostgreSQL & sqlbench
+# Redash
 
-Discover and test sqlbench.
+An overview of Redash.
 
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)  [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](http://forthebadge.com)
 
-![PostgreSQL](./images/postgresql-logo-256.png)
+![Redash](./images/redash.png)
 
-## Getting started with SqlBench
+## Getting started with Redash
 
 * Clone this project
 * Use docker-compose and the docker-compose.yaml file
@@ -14,25 +14,6 @@ Discover and test sqlbench.
 ```bat
 docker-compose up -d
 ```
-
-* Install Go
-* Install Sqlbench with Go
-
-```go
-go get -u github.com/felixge/sqlbench
-```
-
-* Call Sqlbench in CL
-
-```bat
-sqlbench -c postgres://admin:password@localhost:5432/adventureworks?sslmode=disable -n 1000 -p -v -m client -o baseline.csv scripts/unqualified.sql scripts/qualified.sql scripts/ordered.sql
-```
-
-The result of this command is :
-
-![sqlbench result](./images/result.png)
-
-![sqlbench result in live](./images/sqlbench.gif)
 
 * Use docker-compose to stop properly the project
 
@@ -42,15 +23,13 @@ docker-compose down
 
 ## Useful links
 
-* [SqlBench](https://github.com/felixge/sqlbench) - Tool to measures and compares the execution time of SQL queries on PG database made by [Felix Geisendörfer](https://github.com/felixge)
+* [Redash documentation](https://redash.io/help/user-guide/getting-started)
 
 ## Build with
 
-* [PostgreSQL](https://www.postgresql.org) - Open source object-relational database system
+* [Redash](https://redash.io/)
 * [Docker](https://www.docker.com/) - Set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers
 * [Git](https://git-scm.com) - Open source distributed version control system
-* [pgAdmin](https://www.pgadmin.org/) - Open Source administration and development platform for PostgreSQL
-* [Go](https://golang.org/) - Open source programming language 
 
 ## Contributing
 
